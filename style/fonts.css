@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'VarelaRound';
+  src: url('./google-fonts/VarelaRound-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('./google-fonts/Ubuntu-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

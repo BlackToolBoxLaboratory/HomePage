@@ -1,0 +1,22 @@
+:root {
+  --color_default: var(--color_gray-lll);
+
+  --color_white: #fff;
+  --color_black: #000;
+
+  --color_gray-lll: #f3f3f3;
+  --color_gray-ll:  #cdcdcd;
+  --color_gray-l:   #a6a6a6;
+  --color_gray:     #808080;
+  --color_gray-d:   #5a5a5a;
+  --color_gray-dd:  #343434;
+  --color_gray-ddd: #0d0d0d;
+
+  --color_github: #333;
+  --color_npm: #cb3837;
+
+  --color_js: #f0db4f;
+  --color_react: #61dafb;
+  --color_vue: #41b883;
+  --color_angular: #b52e31;
+};

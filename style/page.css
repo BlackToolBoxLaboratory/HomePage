@@ -1,0 +1,137 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color_gray-lll);
+}
+.page .page_header {
+  width: 100%;
+  display: flex;
+  padding: 0.25rem 1rem;
+  flex: 0;
+  align-items: center;
+  color: var(--color_gray-lll);
+  background-color: var(--color_gray-ddd);
+}
+.page_header .header_mark {
+  font-size: 1.5rem;
+  flex: 1;
+}
+.page_header .header_menu {
+  font-size: 1.125rem;
+  flex: 0;
+}
+.page .page_container {
+  flex: 1;
+  width: 60%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.container_image {
+  width: 15rem;
+}
+.page_container .container_divider {
+  display: flex;
+  align-items: center;
+}
+.container_divider .divider_line {
+  flex: 1;
+  height: 1px;
+  width: 100%;
+  margin: 0 0.5rem;
+  border-bottom: 1px dashed var(--color_gray);
+  opacity: 0.5;
+}
+.container_divider .divider_icon {
+  flex: 0;
+  margin: 0 0.25rem;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+.container_section {
+  margin: 1rem 0;
+}
+.container_section.section-me {
+  display: flex;
+  padding: 0 5rem;
+}
+.me_image {
+  flex:0;
+  width:15rem;
+}
+.me_content {
+  margin-left: 1rem;
+  flex:1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.container_section.section-product {
+  display: flex;
+}
+.product_block {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: var(--color_gray-ll) 1px solid;
+  border-radius: 0.5rem;
+}
+.product_block .block_image {
+  width: 10rem;
+}
+.product_block .block_title {
+  color: var(--color_gray);
+  margin: 0.5rem 0;
+}
+.product_block .block_description {
+  color: var(--color_gray-l);
+  margin: 0.5rem 0;
+}
+.divider_icon.icon-original {
+  color: var(--color_black);
+}
+.divider_icon.icon-js {
+  color: var(--color_js);
+}
+.divider_icon.icon-react {
+  color: var(--color_react);
+}
+.divider_icon.icon-vue {
+  color: var(--color_vue);
+}
+.divider_icon.icon-angular {
+  color: var(--color_angular);
+}
+.page .page_footNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color_gray-ll);
+  flex: 0;
+}
+.page_footNav .footNav_linkBtn {
+  text-decoration: none;
+  color: var(--color_gray);
+}
+.footNav_linkBtn + .footNav_linkBtn {
+  margin-left: 1rem;
+}
+.footNav_linkBtn.linkBtn-github:hover {
+  color: var(--color_github);
+}
+.footNav_linkBtn.linkBtn-npm:hover {
+  color: var(--color_npm);
+}
+
+.page .page_footer {
+  text-align: right;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  flex: 0;
+  color: var(--color_gray-lll);
+  background-color: var(--color_gray-ddd);
+}

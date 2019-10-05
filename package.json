@@ -1,0 +1,35 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Home page for Black Tool Box Laboratory",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0"
+  },
+  "scripts": {
+    "copyVendor": "gulp copyVendor",
+    "updateHomePage": "gulp updateHomePage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackToolBoxLaboratory/homepage.git"
+  },
+  "keywords": [
+    "BTBLaboratory",
+    "blacktoolbox"
+  ],
+  "author": {
+    "name": "Van Noel",
+    "email": "vannoel0628@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackToolBoxLaboratory/homepage/issues"
+  },
+  "homepage": "https://blacktoolboxlaboratory.github.io/"
+}

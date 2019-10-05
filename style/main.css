@@ -1,0 +1,17 @@
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html
+{
+  font-size: 16px;
+  font-family: 'VarelaRound', sans-serif, Arial, 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
