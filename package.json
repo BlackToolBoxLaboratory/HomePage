@@ -13,7 +13,8 @@
   },
   "scripts": {
     "copyVendor": "gulp copyVendor",
-    "updateHomePage": "gulp updateHomePage"
+    "updateHomePage": "gulp updateHomePage",
+    "backupCodebase": "gulp backupCodebase"
   },
   "repository": {
     "type": "git",

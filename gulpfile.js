@@ -4,6 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 
 const path_libs = './libs'
 const path_homepage = '../blacktoolboxlaboratory.github.io/';
+var path_backup = '../codebase/homepage/';
 
 gulp.task('copyVendor', function(done) { 
   /* jQuery */
@@ -42,5 +43,25 @@ gulp.task('updateHomePage', function(done){
   gulp.src(['img/**/*'])
     .pipe(gulp.dest(path_homepage+'/img/'))
 
+  done();
+});
+
+gulp.task('backupCodebase', function(done) {  
+  /* src */
+  gulp.src(['img/*'])
+    .pipe(gulp.dest(path_backup + 'img/'));
+  gulp.src(['style/**/*'])
+    .pipe(gulp.dest(path_backup + 'style/'));
+  /* others */        
+  gulp.src([
+      'LICENSE',
+      'README.md',
+      'package.json',
+      'package-lock.json',
+      'gulpfile.js',
+      'index.html',
+      'favicon.ico',
+    ])
+    .pipe(gulp.dest(path_backup));
   done();
 });

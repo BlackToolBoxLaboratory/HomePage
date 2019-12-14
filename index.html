@@ -3,27 +3,40 @@
   <head>
     <meta charset='utf-8'/>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./style/index.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>BTB Lab. | HomePage</title>
+    <meta name="google-site-verification" content="XjkUm8M885lvmNSs9BKe9khMCQY99rSfGsN3Tf6yfBY" />
+
+    <meta property='og:title' content='Black Tool Box Laboratory'/> 
+    <meta property='og:type' content='website'/> 
+    <meta property='og:url' content='https://blacktoolboxlaboratory.github.io/'/>
+    <meta property='og:image' content=''/>
+    <meta name='description' property='og:description' content='Black Tool Box Laboratory build up in 1 Nov. 2016 which is a self-training playground on purpose to create components experimental for pure-JavaScript, React and Vue. '/> 
+    
+    <meta property="fb:app_id" content="271733690121245"/>
+
+    <meta name='twitter:card' content='summary'/>
+    <meta name="twitter:site" content="@vannoel0628" />
+    <meta name="twitter:creator" content="@vannoel0628" />
   </head>
   <body class="page">
     <header class="page_header">
       <div class="header_mark">
         Black Tool Box Laboratory
       </div>
-      <div class="header_menu">
+      <div id="menu_trigger" class="header_menu">
         <i class="fas fa-bars"></i>
       </div>
     </header>
 
     <div class="page_container">
       <div class="container_section section-me">
-        <img class="me_image" src="./img/cat.png">
+        <img class="me_image" src="./img/cat.png" alt="cat">
         <p class="me_content">
-          Hi, I'm Noël. I am a front-end modules designer / developer. And here is my playground or so-called personal laboratory named Black Tool Box Laboratory (BTB Lab.). The purpose of establishment for BTB Lab. is keeping training my coding and design skills or for some experimental programing. Mostly they are made for help myself to develop in the future, and I published them to NPM too. So there will be my pleasure if they are helpful to you to use or develop. And for now I have three part components of them: JavaScript, React and Vue. When you use them, please be free to contact me by E-mail: <a href="mailto://vannoel0628@gmail.com" target="_blank">vannoel0628@gmail.com <i class="fas fa-envelope-square"></i></a> for any problem you met, idea or suggestion you have.
+          Hi, I'm Noël. I am a front-end modules designer / developer. And here is my playground or so-called personal laboratory named Black Tool Box Laboratory (BTB Lab.). The purpose of establishment for BTB Lab. is keeping training my coding and design skills or for some experimental programing. Mostly they are made for help myself to develop in the future, and I published them to NPM too. So there will be my pleasure if they are helpful to you to use or develop. And for now I have three part components of them: JavaScript, React and Vue. When you use them, please be free to contact me by E-mail: <a class="content_link" href="mailto://vannoel0628@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i> vannoel0628@gmail.com</a> for any problem you met, idea or suggestion you have.
         </p>
       </div>
 
@@ -41,52 +54,82 @@
 
       <div class="container_section section-product">
         <div class="product_block block-javascript">
-          <img class="block_image" src="./img/BTB_JavaScript.png">
+          <img class="block_image" src="./img/BTB_JavaScript.png" alt="BTB_JS">
           <h3 class="block_title">
             JavaScript
           </h3>
           <p class="block_description">
-            Some useful feature developed into prototype which based on JavaScript only. We can just use it like a class.
+            Some useful feature developed into prototype which based on JavaScript only. We can just use it like a class. Already have two components published to NPM. But the document pages are preparing stage.
           </p>
           <div class="block_redirection">
-            <i class="fas fa-shoe-prints"></i>
-            Go to the page
+            <!-- <i class="fas fa-shoe-prints"></i> -->
+            <i class="fas fa-ban"></i>
+            <span>Building</span>
           </div>
         </div>
-        <div class="product_block block-react">
-          <img class="block_image" src="./img/BTB_React.png">
+        <div id="redirect_react-block" class="product_block block-react">
+          <img class="block_image" src="./img/BTB_React.png" alt="BTB_React">
           <h3 class="block_title">
             React
           </h3>
           <p class="block_description">
-            UI modules based on React. Recently I try to revise my modules in React to functional components.
+            UI modules based on React. Recently I am working to refactor my modules in React 16 including their document pages. You can visit my last work fisrtly.
           </p>
           <div class="block_redirection">
             <i class="fas fa-shoe-prints"></i>
-            Go to the page
+            <span>Go to the v1</span>
           </div>
         </div>
         <div class="product_block block-vue">
-          <img class="block_image" src="./img/BTB_Vue.png">
+          <img class="block_image" src="./img/BTB_Vue.png" alt="BTB_Vue">
           <h3 class="block_title">
-            Vue
+            Vue 
           </h3>
           <p class="block_description">
-            UI modules based on Vue. I already have some modules but need to refactor to more general design. 
+            UI modules based on Vue. Already have some components but not published yet. It is preparing stage.
           </p>
           <div class="block_redirection">
-            <i class="fas fa-shoe-prints"></i>
-            Go to the page
+            <!-- <i class="fas fa-shoe-prints"></i> -->
+            <i class="fas fa-ban"></i>
+            <span>Building</span>
           </div>
         </div>
       </div>
     </div>
 
+    <aside id="menu_container" class="page_aside">
+      <ul class="aside_menu">
+        <li class="menu_item">
+          <span class="menu_title">To Visit sub-laboratory </span>
+        </li>
+        <li class="menu_item item-javscript item-ban">
+          <img class="menu_image" src="./img/BTB_JavaScript.png" alt="BTB_JS">
+          <span class="menu_title">JavaScript Lab</span>
+        </li>
+        <li id="redirect_react-menu" class="menu_item item-react">
+          <img class="menu_image" src="./img/BTB_React.png" alt="BTB_React">
+          <span class="menu_title">React Lab</span>
+        </li>
+        <li class="menu_item item-vue item-ban">
+          <img class="menu_image" src="./img/BTB_Vue.png" alt="BTB_Vue">
+          <span class="menu_title">Vue Lab</span>
+        </li>
+      </ul>
+    </aside>
+
     <div class="page_footNav">
-      <a class="fab fa-github footNav_linkBtn linkBtn-github" href="https://github.com/BlackToolBoxLaboratory" target="_blank"></a>
-      <a class="fab fa-npm footNav_linkBtn linkBtn-npm" href="https://www.npmjs.com/org/blacktoolbox" target="_blank"></a>
-      <a class="fab fa-linkedin footNav_linkBtn linkBtn-linkedin" href="https://www.linkedin.com/in/vannoel/" target="_blank"></a>
-      <a class="far fa-envelope footNav_linkBtn linkBtn-email" href="mailto://vannoel0628@gmail.com" target="_blank"></a>
+      <a class="footNav_linkBtn linkBtn-github" href="https://github.com/BlackToolBoxLaboratory" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="footNav_linkBtn linkBtn-npm" href="https://www.npmjs.com/org/blacktoolbox" target="_blank">
+        <i class="fab fa-npm"></i>
+      </a>
+      <a class="footNav_linkBtn linkBtn-linkedin" href="https://www.linkedin.com/in/vannoel/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="footNav_linkBtn linkBtn-email" href="mailto://vannoel0628@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
 
     <footer class="page_footer">
@@ -96,6 +139,16 @@
     <script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
     <script>
       function loadEvent () {
+        $('#menu_trigger').click(function(){
+          if($('#menu_container').hasClass('aside-show')) {
+            $('#menu_container').removeClass('aside-show');
+          } else{
+            $('#menu_container').addClass('aside-show');
+          }
+        })
+        $("#redirect_react-menu, #redirect_react-block").click(function(){
+          window.open('https://blacktoolboxlaboratory.github.io/react/v1/');
+        })
       };
       $(document).ready(function(){
         loadEvent();

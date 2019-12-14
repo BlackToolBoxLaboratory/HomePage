@@ -4,6 +4,9 @@
   --color_white: #fff;
   --color_black: #000;
 
+  --color_mask-l: rgba(0, 0, 0, 0.5);
+  --color_mask-d: rgba(0, 0, 0, 0.9);
+
   --color_gray-lll: #f3f3f3;
   --color_gray-ll:  #cdcdcd;
   --color_gray-l:   #a6a6a6;
