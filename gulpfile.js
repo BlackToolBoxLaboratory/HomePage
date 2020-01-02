@@ -3,8 +3,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
 const path_libs = './libs'
-const path_homepage = '../blacktoolboxlaboratory.github.io/';
-var path_backup = '../codebase/homepage/';
+const path_homepage = '../blacktoolboxlaboratory.github.io';
+var path_backup = '../codebase/homepage';
 
 gulp.task('copyVendor', function(done) { 
   /* jQuery */
@@ -33,7 +33,7 @@ gulp.task('updateHomePage', function(done){
   
   /* font */
   gulp.src(['style/google-fonts/*'])
-    .pipe(gulp.dest(path_homepage+'/style/google-fonts'))
+    .pipe(gulp.dest(path_homepage+'/style/google-fonts/'))
 
   /* libs */
   gulp.src(['libs/**/*'])
@@ -49,9 +49,9 @@ gulp.task('updateHomePage', function(done){
 gulp.task('backupCodebase', function(done) {  
   /* src */
   gulp.src(['img/*'])
-    .pipe(gulp.dest(path_backup + 'img/'));
+    .pipe(gulp.dest(path_backup + '/img/'));
   gulp.src(['style/**/*'])
-    .pipe(gulp.dest(path_backup + 'style/'));
+    .pipe(gulp.dest(path_backup + '/style/'));
   /* others */        
   gulp.src([
       'LICENSE',
