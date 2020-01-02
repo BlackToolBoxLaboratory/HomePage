@@ -54,7 +54,7 @@
   margin-top: 3.5rem;
   padding-left: 1rem;
 }
-.aside_menu .menu_item {
+.aside_menu .menu_item:not(:first-child) {
   margin: 1rem 0;
   cursor: pointer;
 }
@@ -70,10 +70,10 @@
 .menu_item.item-ban .menu_title{
   color: var(--color_gray-ll);
 }
-.menu_item.item-javascript:not(.item-ban):hover .menu_title {
+.menu_item.item-javascript:hover .menu_title {
   color: var(--color_js);
 }
-.menu_item.item-react:not(.item-ban):hover .menu_title {
+.menu_item.item-react:hover .menu_title {
   color: var(--color_react);
 }
 .menu_item.item-vue:not(.item-ban):hover .menu_title {
