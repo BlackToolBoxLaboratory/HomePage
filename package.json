@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "Home page for Black Tool Box Laboratory",
+  "description": "Home page of BTB Lab.",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
     "jquery": "^3.4.1"
