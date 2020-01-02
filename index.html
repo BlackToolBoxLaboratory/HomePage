@@ -53,7 +53,7 @@
       </div>
 
       <div class="container_section section-product">
-        <div class="product_block block-javascript">
+        <div id="redirect_javascript-block" class="product_block block-javascript">
           <img class="block_image" src="./img/BTB_JavaScript.png" alt="BTB_JS">
           <h3 class="block_title">
             JavaScript
@@ -62,9 +62,8 @@
             Some useful feature developed into prototype which based on JavaScript only. We can just use it like a class. Already have two components published to NPM. But the document pages are preparing stage.
           </p>
           <div class="block_redirection">
-            <!-- <i class="fas fa-shoe-prints"></i> -->
-            <i class="fas fa-ban"></i>
-            <span>Building</span>
+            <i class="fas fa-shoe-prints"></i>
+            <span>Document</span>
           </div>
         </div>
         <div id="redirect_react-block" class="product_block block-react">
@@ -77,7 +76,7 @@
           </p>
           <div class="block_redirection">
             <i class="fas fa-shoe-prints"></i>
-            <span>Go to the v1</span>
+            <span>Document v1</span>
           </div>
         </div>
         <div class="product_block block-vue">
@@ -102,7 +101,7 @@
         <li class="menu_item">
           <span class="menu_title">To Visit sub-laboratory </span>
         </li>
-        <li class="menu_item item-javscript item-ban">
+        <li id="redirect_javascript-menu" class="menu_item item-javascript">
           <img class="menu_image" src="./img/BTB_JavaScript.png" alt="BTB_JS">
           <span class="menu_title">JavaScript Lab</span>
         </li>
@@ -127,8 +126,11 @@
       <a class="footNav_linkBtn linkBtn-linkedin" href="https://www.linkedin.com/in/vannoel/" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
+      <a class="footNav_linkBtn linkBtn-wordpress" href="https://vannoel0628.wordpress.com/" target="_blank">
+        <i class="fab fa-wordpress"></i>
+      </a>
       <a class="footNav_linkBtn linkBtn-email" href="mailto://vannoel0628@gmail.com" target="_blank">
-        <i class="fas fa-envelope"></i>
+        <i class="far fa-envelope"></i>
       </a>
     </div>
 
@@ -145,6 +147,9 @@
           } else{
             $('#menu_container').addClass('aside-show');
           }
+        })
+        $("#redirect_javascript-menu, #redirect_javascript-block").click(function(){
+          window.open('https://blacktoolboxlaboratory.github.io/javascript/v1/');
         })
         $("#redirect_react-menu, #redirect_react-block").click(function(){
           window.open('https://blacktoolboxlaboratory.github.io/react/v1/');

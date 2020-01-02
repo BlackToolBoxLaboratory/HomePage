@@ -41,10 +41,13 @@
   right: -100%;
   bottom: 0;
   background-color: var(--color_mask-l);
-  transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0s, right 0s ease-in-out 0.3s;
 }
 .page .page_aside.aside-show {
   right: 0;
+  opacity: 1;
+  transition: right 0s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
 }
 .aside_menu {
   list-style: none;
@@ -67,7 +70,7 @@
 .menu_item.item-ban .menu_title{
   color: var(--color_gray-ll);
 }
-.menu_item.item-javscript:not(.item-ban):hover .menu_title {
+.menu_item.item-javascript:not(.item-ban):hover .menu_title {
   color: var(--color_js);
 }
 .menu_item.item-react:not(.item-ban):hover .menu_title {
@@ -208,6 +211,9 @@
 .footNav_linkBtn.linkBtn-linkedin:hover {
   color: var(--color_linkedin);
 }
+.footNav_linkBtn.linkBtn-wordpress:hover {
+  color: var(--color_wordpress);
+}
 .footNav_linkBtn.linkBtn-email:hover {
   color: var(--color_email);
 }
@@ -228,10 +234,10 @@
   .page .page_aside {
     background-color: var(--color_mask-d);
   }
-  .menu_item.item-javscript:not(.item-ban) .menu_title {
+  .menu_item.item-javascript .menu_title {
     color: var(--color_js);
   }
-  .menu_item.item-react:not(.item-ban) .menu_title {
+  .menu_item.item-react .menu_title {
     color: var(--color_react);
   }
   .menu_item.item-vue:not(.item-ban) .menu_title {
