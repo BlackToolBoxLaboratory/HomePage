@@ -23,6 +23,9 @@
   font-size: 1.5rem;
   flex-grow: 1;
 }
+.page_header .header_mark.mark-sm {
+  display: none;
+}
 .page_header .header_menu {
   font-size: 1.125rem;
   flex-shrink: 0;
@@ -133,7 +136,7 @@
 }
 .container_section.section-product {
   display: flex;
-  overflow: auto;
+  overflow-y: hidden;
 }
 .product_block {
   width: 30%;
@@ -229,6 +232,19 @@
   background-color: var(--color_gray-ddd);
 }
 
+.container_section.section-me {
+  margin-top: 2rem;
+}
+
+/* Lower small size */
+@media only screen and (max-width : 576px) {
+  .page_header .header_mark.mark-md {
+    display: none;
+  }
+  .page_header .header_mark.mark-sm {
+    display: initial;
+  }
+}
 /* Lower midSize */
 @media only screen and (max-width : 768px) {
   .page .page_aside {
@@ -268,13 +284,6 @@
     width: 60%;
     padding: 1rem 0 0;
   }
-  .container_section.section-me {
-    padding: 0 5rem;
-    flex-direction: row;
-  }
-  .container_section.section-product {
-    overflow: visible;
-  }
   .product_block:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.15);
@@ -295,5 +304,12 @@
   }
   .product_block.block-vue:hover .fas.fa-shoe-prints{
     color: var(--color_vue);
+  }
+}
+
+/* Upper extreme Large Size */
+@media only screen and (min-width : 1200px) {
+  .container_section.section-me {
+    flex-direction: row;
   }
 }

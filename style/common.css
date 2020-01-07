@@ -14,7 +14,10 @@ html
   font-family: 'VarelaRound', sans-serif, Arial, 'Times New Roman', Times, serif;
 }
 
-body {
+body, 
+div, 
+p, 
+ul {
   margin: 0;
   padding: 0;
 }
