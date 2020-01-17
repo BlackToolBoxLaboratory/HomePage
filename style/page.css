@@ -205,6 +205,9 @@
 .footNav_linkBtn + .footNav_linkBtn {
   margin-left: 1rem;
 }
+.footNav_linkBtn.linkBtn-paypal:hover {
+  color: var(--color_paypal);
+}
 .footNav_linkBtn.linkBtn-github:hover {
   color: var(--color_github);
 }
