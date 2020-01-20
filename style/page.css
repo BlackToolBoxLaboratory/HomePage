@@ -121,6 +121,9 @@
   align-items: center;
   padding: 0 1rem;
 }
+.container_section.section-donate {
+  text-align: center;
+}
 .me_image {
   flex-shrink:0;
   width:15rem;
