@@ -92,18 +92,17 @@
             <span>Document v1</span>
           </div>
         </div>
-        <div class="product_block block-vue">
+        <div id="redirect_vue-block" class="product_block block-vue">
           <img class="block_image" src="./img/BTB_Vue.png" alt="BTB_Vue">
           <h3 class="block_title">
             Vue 
           </h3>
           <p class="block_description">
-            UI modules based on Vue. Already have some components but not published yet. It is preparing stage.
+            UI modules based on Vue. Already have some components but not published yet. I am still wotk on it.
           </p>
           <div class="block_redirection">
-            <!-- <i class="fas fa-shoe-prints"></i> -->
-            <i class="fas fa-ban fa-fw"></i>
-            <span>Building</span>
+            <i class="fas fa-shoe-prints"></i>
+            <span>Document</span>
           </div>
         </div>
       </div>
@@ -122,7 +121,7 @@
           <img class="menu_image" src="./img/BTB_React.png" alt="BTB_React">
           <span class="menu_title">React Lab</span>
         </li>
-        <li class="menu_item item-vue item-ban">
+        <li id="redirect_vue-menu" class="menu_item item-vue">
           <img class="menu_image" src="./img/BTB_Vue.png" alt="BTB_Vue">
           <span class="menu_title">Vue Lab</span>
         </li>
@@ -169,6 +168,9 @@
         })
         $("#redirect_react-menu, #redirect_react-block").click(function(){
           window.open("https://blacktoolboxlaboratory.github.io/react/v1/");
+        })
+        $("#redirect_vue-menu, #redirect_vue-block").click(function(){
+          window.open("https://blacktoolboxlaboratory.github.io/vue/");
         })
       };
       $(document).ready(function(){
