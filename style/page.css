@@ -202,8 +202,9 @@
   flex-shrink: 0;
 }
 .page_footNav .footNav_linkBtn {
+  font-size:1.25rem;
   text-decoration: none;
-  color: var(--color_gray);
+  color: var(--color_gray-d);
 }
 .footNav_linkBtn + .footNav_linkBtn {
   margin-left: 1rem;
