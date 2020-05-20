@@ -100,7 +100,7 @@
 }
 .container_divider .divider_line {
   flex-grow: 1;
-  height: 1px;
+  height: 2px;
   width: 100%;
   margin: 0 0.5rem;
   border-bottom: 1px dashed var(--color_gray);
