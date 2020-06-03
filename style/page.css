@@ -167,6 +167,15 @@
   width: 100%;
   text-align: right;
 }
+.product_block.block-javascript:hover .fas.fa-shoe-prints{
+  color: var(--color_js);
+}
+.product_block.block-react:hover .fas.fa-shoe-prints{
+  color: var(--color_react);
+}
+.product_block.block-vue:hover .fas.fa-shoe-prints{
+  color: var(--color_vue);
+}
 .divider_icon.icon-original {
   color: var(--color_black);
 }
@@ -187,6 +196,7 @@
 .page .page_footNav {
   display: flex;
   position: relative;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -290,15 +300,6 @@
   .product_block:hover .block_description,
   .product_block:hover .block_redirection {
     color: var(--color_gray-d);
-  }
-  .product_block.block-javascript:hover .fas.fa-shoe-prints{
-    color: var(--color_js);
-  }
-  .product_block.block-react:hover .fas.fa-shoe-prints{
-    color: var(--color_react);
-  }
-  .product_block.block-vue:hover .fas.fa-shoe-prints{
-    color: var(--color_vue);
   }
 }
 
