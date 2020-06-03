@@ -195,7 +195,6 @@
 .page .page_footNav {
   display: flex;
   position: relative;
-  justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -232,7 +231,7 @@
 /* Foot */
 .page .page_footer {
   position: relative;
-  text-align: right;
+  text-align: center;
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
   flex-shrink: 0;
