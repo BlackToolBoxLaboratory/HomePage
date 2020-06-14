@@ -1,10 +1,12 @@
 const gulp = require('gulp');
+const del = require('del');
+
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
 const path_libs = './libs'
 const path_homepage = '../blacktoolboxlaboratory.github.io';
-var path_backup = '../codebase/homepage';
+const path_backup = '../codebase/homepage';
 
 gulp.task('copyVendor', function(done) { 
   /* jQuery */
@@ -50,7 +52,10 @@ gulp.task('updateHomePage', function(done){
   done();
 });
 
-gulp.task('backupCodebase', function(done) {  
+gulp.task('backupCodebase', async function(done) {  
+  /* clean files */
+  await del([path_backup + '/'], {force: true})
+
   /* src */
   gulp.src(['img/*'])
     .pipe(gulp.dest(path_backup + '/img/'));
@@ -58,6 +63,7 @@ gulp.task('backupCodebase', function(done) {
     .pipe(gulp.dest(path_backup + '/style/'));
   /* others */        
   gulp.src([
+      '.gitignore',
       'LICENSE',
       'README.md',
       'package.json',
