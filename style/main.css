@@ -211,9 +211,6 @@
 .footNav_linkBtn + .footNav_linkBtn {
   margin-left: 1rem;
 }
-.footNav_linkBtn.linkBtn-paypal:hover {
-  color: var(--color_paypal);
-}
 .footNav_linkBtn.linkBtn-github:hover {
   color: var(--color_github);
 }
@@ -222,9 +219,6 @@
 }
 .footNav_linkBtn.linkBtn-linkedin:hover {
   color: var(--color_linkedin);
-}
-.footNav_linkBtn.linkBtn-wordpress:hover {
-  color: var(--color_wordpress);
 }
 .footNav_linkBtn.linkBtn-email:hover {
   color: var(--color_email);
