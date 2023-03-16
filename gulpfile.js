@@ -44,6 +44,9 @@ gulp.task('updateHomePage', function(done){
   /* img */
   gulp.src(['img/**/*'])
     .pipe(gulp.dest(path_homepage+'/img/'))
+
+  /* og:image */
+  gulp.src(['logo_btb.png']).pipe(gulp.dest(path_homepage));
   
   /* sitemap */
   gulp.src(['sitemap.xml'])
